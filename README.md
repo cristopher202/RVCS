@@ -60,8 +60,7 @@ hubert_base.pt
 ./ffprobe
 ```
 Si tiene windows puede ejecutar el archivo `envfilescheck.bat` para descargar los modelos automaticamente, necesitará descargar [aria2] y decomprimirlo en el folder de RVC (https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.zip).
-
-
+> Ej: C:\Users\admin\Downloads\Retrieval-based-Voice-Conversion-WebUI\aria2-1.36.0-win-64bit-build1
 
 
 Después, usa los siguientes comandos para iniciar la interfaz web:
