@@ -40,8 +40,8 @@ set dlg48=https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/pretra
 set hp2=HP2-人声vocals+非人声instrumentals.pth
 set hp5=HP5-主旋律人声vocals+其他instrumentals.pth
 
-set dlhp2=https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP2-人声vocals+非人声instrumentals.pth
-set dlhp5=https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/uvr5_weights/HP5-主旋律人声vocals+其他instrumentals.pth
+set dlhp2=https://huggingface.co/juuzouyt/rvc_voces/resolve/main/HP2.pth
+set dlhp5=https://huggingface.co/juuzouyt/rvc_voces/resolve/main/HP5.pth
 
 set hb=hubert_base.pt
 
