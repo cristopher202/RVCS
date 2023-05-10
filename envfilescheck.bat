@@ -191,26 +191,6 @@ if exist "%~dp0pretrained\%g48%" (
         echo=)
     )
 
-echo verificando %hp2%
-if exist "%~dp0uvr5_weights\%hp2%" (
-        echo %hp2% en .\uvr5_weights verificado.
-        echo=
-    ) else (
-        echo fallo. comenzando la descarga desde HuggingFace.
-        %~dp0%aria2%\aria2c --console-log-level=error -c -x 16 -s 16 -k 1M %dlhp2% -d %~dp0\uvr5_weights -o %hp2%
-        if exist "%~dp0uvr5_weights\%hp2%" (echo descarga exitosa.) else (echo por favor intentalo de nuevo!
-        echo=)
-    )
-echo verificando %hp5%
-if exist "%~dp0uvr5_weights\%hp5%" (
-        echo %hp5% en .\uvr5_weights verificado.
-        echo=
-    ) else (
-        echo fallo. comenzando la descarga desde HuggingFace.
-        %~dp0%aria2%\aria2c --console-log-level=error -c -x 16 -s 16 -k 1M %dlhp5% -d %~dp0\uvr5_weights -o %HP5%
-        if exist "%~dp0uvr5_weights\%hp5%" (echo descarga exitosa.) else (echo por favor intentalo de nuevo!
-        echo=)
-    )
 
 echo verificando %hb%
 if exist "%~dp0%hb%" (
