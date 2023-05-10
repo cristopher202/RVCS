@@ -7,4 +7,5 @@ __pycache__
 /weights
 *.pyd
 hubert_base.pt
-/logs
+/logs/*
+!/logs/mute/
