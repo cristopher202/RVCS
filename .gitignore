@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__
+/dataset
+/TEMP
+/pretrained
+/uvr5_weights
+/weights
+*.pyd
+hubert_base.pt
+/logs
