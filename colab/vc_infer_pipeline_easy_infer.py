@@ -8,7 +8,7 @@ from scipy import signal
 
 config = Config()
 x_pad = config.x_pad
-x_query config.x_query
+x_query = config.x_query
 x_center = config.x_center
 x_max = config.x_max
 
