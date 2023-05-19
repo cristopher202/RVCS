@@ -78,7 +78,7 @@ from scipy.io import wavfile
 from fairseq import checkpoint_utils
 import gradio as gr
 import logging
-from vc_infer_pipeline import VC
+from vc_infer_pipeline_easy_infer import VC
 from config import Config
 config = Config()
 is_half = config.is_half
