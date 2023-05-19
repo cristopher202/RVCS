@@ -304,7 +304,7 @@ def get_vc(sid):
     else:
         net_g = net_g.float()
     print(tgt_sr, device, is_half)
-    vc = VC(tgt_sr, device, is_half)
+    vc = VC(tgt_sr, config)
     n_spk = cpt["config"][-3]
     return {"visible": False, "maximum": n_spk, "__type__": "update"}
 
