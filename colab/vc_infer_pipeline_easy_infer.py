@@ -1,10 +1,16 @@
 import numpy as np, parselmouth, torch, pdb
 from time import time as ttime
 import torch.nn.functional as F
-from config import x_pad, x_query, x_center, x_max
+from config import Config
 import scipy.signal as signal
 import pyworld, os, traceback, faiss
 from scipy import signal
+
+config = Config()
+x_pad = config.x_pad
+x_query config.x_query
+x_center = config.x_center
+x_max = config.x_max
 
 bh, ah = signal.butter(N=5, Wn=48, btype="high", fs=16000)
 
