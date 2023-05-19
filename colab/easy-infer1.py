@@ -336,7 +336,7 @@ def get_index():
     if check_for_name() != '':
         if iscolab:
             chosen_model=sorted(names)[0].split(".")[0]
-            logs_path="/content/RVC/logs/"+chosen_model
+            logs_path="/content/Retrieval-based-Voice-Conversion-WebUI/logs/"+chosen_model
             for file in os.listdir(logs_path):
                 if file.endswith(".index"):
                     return os.path.join(logs_path, file)
@@ -347,7 +347,7 @@ def get_index():
 def get_indexes():
     indexes_list=[]
     if iscolab:
-        for dirpath, dirnames, filenames in os.walk("/content/RVC/logs/"):
+        for dirpath, dirnames, filenames in os.walk("/content/Retrieval-based-Voice-Conversion-WebUI/logs/"):
             for filename in filenames:
                 if filename.endswith(".index"):
                     indexes_list.append(os.path.join(dirpath,filename))
@@ -383,7 +383,7 @@ def save_to_wav2(dropbox):
     
 def match_index(speaker):
     folder=speaker.split(".")[0]
-    parent_dir="/content/RVC/logs/"+folder
+    parent_dir="/content/Retrieval-based-Voice-Conversion-WebUI/logs/"+folder
     for filename in os.listdir(parent_dir):
         if filename.endswith(".index"):
             index_path=os.path.join(parent_dir,filename)
