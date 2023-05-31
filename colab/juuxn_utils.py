@@ -2,21 +2,12 @@
 #@markdown **Nota:** Si el modelo pesa más de 2gb puede tardar hasta 5 minutos
 import os
 import shutil
-from google.colab import drive
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-from google.colab import auth
-from oauth2client.client import GoogleCredentials
 from urllib.parse import urlparse, parse_qs, urlunparse
 import time
 import ipywidgets as widgets
 success=widgets.Button(description="\u2714 Hecho",disabled=True, button_style="success")
 
 os.chdir(os.path.expanduser("~"))
-auth.authenticate_user()
-gauth = GoogleAuth()
-gauth.credentials = GoogleCredentials.get_application_default()
-gdrive = GoogleDrive(gauth)
 
 def crear_acceso_directo(enlace):
         if os.path.exists('/content/drive/MyDrive/temporalmodels'):
