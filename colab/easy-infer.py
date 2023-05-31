@@ -8,6 +8,7 @@ import faiss
 from random import shuffle
 import scipy.io.wavfile as wavfile
 from mega import Mega
+import juuxn_utils
 
 now_dir = os.getcwd()
 sys.path.append(now_dir)
@@ -402,7 +403,13 @@ def download_from_url(url, model):
     zipfile_path = './zips/' + zipfile
     MODELEPOCH = ''
     if "drive.google.com" in url:
-        subprocess.run(["gdown", url, "--fuzzy", "-O", zipfile_path])
+        try:
+            subprocess.run(["gdown", url, "--fuzzy", "-O", zipfile_path])
+        except Exception as e:
+            try:
+                juuxn_utils.download_from_drive_url(url)
+            except:
+                return "Error al descargar"
     elif "mega.nz" in url:
         m = Mega()
         m.download_url(url, './zips')
